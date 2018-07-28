@@ -9,12 +9,25 @@ It is a collection of elements with different datatypes which are called **membe
   * Accessing the members of the structures
 ### Syntax for the structure
 ```
-          /*Tagname is optional which means without using structure variable we can create structure but all the structure variables should be declared in the structure*/
-    struct Tagname                    
+/*If we write the TagName then we can create infinte numbers of structure 
+variables in the program whenever we need*/
+
+ struct Tagname                    
     {
       dataType variableName1;
       dataType variableName2;
       dataType variableName3;
     };
+```
+```
+/*Tagname is optional which means without using structure variable we can 
+create structure but all the structure variables should be declared in the structure*/
+
+struct                    
+  {
+   dataType variableName1;
+   dataType variableName2;
+   dataType variableName3;
+  }structure Variable1,structure variable2,....;
 ```
  
