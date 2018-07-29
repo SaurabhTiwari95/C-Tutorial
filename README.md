@@ -71,10 +71,12 @@ struct student
   char name[20];
   float percentage;
  };
- main()
+ int main()
  {
   struct student S1={20,"ABC",78.3}; //COMPILE time initialization
   struct student S2;                 //RUN time initialization
   printf("Enter the details of the student S2");
   scanf("%d %s %f",&S2.id,S2,name,&S2.percentage)
+  return(0);
+ }
 ```
