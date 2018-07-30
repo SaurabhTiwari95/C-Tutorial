@@ -91,11 +91,11 @@ int a
 int *p
 p=&a
 ```
- 1 Define structure
- 2 Declare structure
- 3 Declare pointer variable
- 4 Initialize
- 5 Access the members(using arrow(**->**)operator)
+1. Define structure
+2. Declare structure
+3. Declare pointer variable
+4. Initialize
+5. Access the members(using arrow(**->**)operator)
 ```
 struct student
 {
