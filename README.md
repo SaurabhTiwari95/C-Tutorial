@@ -30,7 +30,7 @@ struct
     dataType variableName3;
   }structure Variable1,structure variable2,....;
 ```
-###EXAMPLE
+### EXAMPLE
 ```
 struct student           //Definition of the structure
 {
@@ -85,8 +85,8 @@ struct student
 *-->>Value operator
 &(ampersand)-->>address operator
 #### Pointer variable is a variable which holds the address of another variable
+### EXAMPLE
 ```
-EXAMPLE
 int a
 int *p
 p=&a
