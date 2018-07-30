@@ -80,3 +80,42 @@ struct student
   return(0);
  }
 ```
+
+## POINTERS
+*-->>Value operator
+&(ampersand)-->>address operator
+#### Pointer variable is a variable which holds the address of another variable
+```
+EXAMPLE
+int a
+int *p
+p=&a
+```
+##### Define structure
+##### Declare structure
+##### Declare pointer variable
+##### Initialize
+##### Access the members(using arrow(**->**)operator)
+```
+struct student
+{
+ int roll_no.;
+ char name[20];
+ float percentage
+ };
+ main()
+ {
+  struct student S1;  //Declaration
+  struct student *ptr;   //Declaration
+  ptr=&S1;  //initialization
+  printf("Enter Rollno.");
+  scanf("%d",&S1.roll_no.)
+  printf("Enter NAME");
+  scanf("%s",&S1.name)
+  printf("Enter Percentage");
+  scanf("%f",&S1.percentage);
+  printf("Roll No.=%d",ptr->roll_no.);
+  printf("Name.=%d",ptr->name);
+  printf("Percentage=%f",ptr->percentage);
+  }
+  ```
