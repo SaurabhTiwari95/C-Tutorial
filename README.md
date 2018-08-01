@@ -138,7 +138,7 @@ struct student
   3. Pointers allow us to pass/share  variables between the functions not copies of them.
   
   ### NULL Pointer
-  1. Whent the value of the pointer is not set to something meaningful then it should be set as NULL.
+  1. When the value of the pointer is not set to something meaningful then it should be set as NULL.
   2. We can check whether the pointer is NULL using the equality operator(=).
   
   
