@@ -133,3 +133,12 @@ struct student
   | long long | 8 |
   | string | ?? |
   
+  1. A pointer is a data item whose value is the memory addess
+  2. Type of pointer describes the type of data we may find on the address.
+  3. Pointers allow us to pass/share  variables between the functions not copies of them.
+  
+  ### NULL Pointer
+  1. Whent the value of the pointer is not set to something meaningful then it should be set as NULL.
+  2. We can check whether the pointer is NULL using the equality operator(=).
+  
+  
