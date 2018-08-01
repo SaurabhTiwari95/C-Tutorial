@@ -119,3 +119,4 @@ struct student
   printf("Percentage=%f",ptr->percentage);
   }
   ```
+  [linkname](https://www.youtube.com/watch?v=XISnO2YhnsY)
