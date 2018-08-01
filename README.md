@@ -119,4 +119,17 @@ struct student
   printf("Percentage=%f",ptr->percentage);
   }
   ```
-  [linkname](https://www.youtube.com/watch?v=XISnO2YhnsY)
+  [POINTERS-CS50](https://www.youtube.com/watch?v=XISnO2YhnsY)
+  
+  1. Pointers provide an alternative way to pass data between functions.
+  2. If we use pointers instead we have the power to pass the variable itself.
+  
+  | Data Types | Size[in bits] |
+  | --- | --- |
+  | int | 4 |
+  | char | 1 |
+  | float | 4 |
+  | double | 8 |
+  | long long | 8 |
+  | string | ?? |
+  
