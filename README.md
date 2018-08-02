@@ -123,7 +123,7 @@ struct student
   
   1. Pointers provide an alternative way to pass data between functions.
   2. If we use pointers instead we have the power to pass the variable itself.
-  
+  ### Different datatypes have different size in the memory(RAM)
   | Data Types | Size[in bits] |
   | --- | --- |
   | int | 4 |
@@ -136,9 +136,24 @@ struct student
   1. A pointer is a data item whose value is the memory addess
   2. Type of pointer describes the type of data we may find on the address.
   3. Pointers allow us to pass/share  variables between the functions not copies of them.
-  
+  4. Pointers are nothing more than an address in  the memory.
   ### NULL Pointer
   1. When the value of the pointer is not set to something meaningful then it should be set as NULL.
   2. We can check whether the pointer is NULL using the equality operator(=).
-  
-  
+  3. This pointer points to nothing.
+  ```
+  int k;
+  k=5; //*pk=35 means k=35,here * is the dereference operator which changes the value of variable k
+  int* pk;
+  pk = &k;
+  ```
+  &k= It is the address of **int k**
+  #### **Another Example**:if arr is an array of dubles, then &arr[i](is where in memory the ith element  of arr[] exists) 
+  #### is a pointer to doubles whose value is the address of the ith element of arr.
+  If **X** is an int-type variable then **&x** is a pointer to int-whose value is the address of **x**.
+  The name of the array is actually pointer to the first element of the array.
+  The main purpose of a pointer is to allow us to modify or inspect the location to which it points which is called **dereferencing
+  where we go to the reference and change the value there**. 
+  Used in this context * is known as a **deference operator**.
+  #### What happens if we try to dereference a pointer whose value is NULL??
+  It causes **Segmentation fault** which defends against accidental dangerous manipulation of unknown pointers.
