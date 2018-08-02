@@ -148,8 +148,8 @@ struct student
   pk = &k;
   ```
   &k= It is the address of **int k**
-  #### **Another Example**:if arr is an array of dubles, then &arr[i](is where in memory the ith element  of arr[] exists) 
-  #### is a pointer to doubles whose value is the address of the ith element of arr.
+  #### **Another Example**:if arr is an array of dubles, then &arr[i](is where in memory the i<sup>th</sup> element  of arr[] exists) 
+  #### is a pointer to doubles whose value is the address of the i<sup>th</sup> element of arr.
   If **X** is an int-type variable then **&x** is a pointer to int-whose value is the address of **x**.
   The name of the array is actually pointer to the first element of the array.
   The main purpose of a pointer is to allow us to modify or inspect the location to which it points which is called **dereferencing
