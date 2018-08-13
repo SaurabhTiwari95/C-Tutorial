@@ -157,3 +157,43 @@ struct student
   Used in this context * is known as a **deference operator**.
   #### What happens if we try to dereference a pointer whose value is NULL??
   It causes **Segmentation fault** which defends against accidental dangerous manipulation of unknown pointers.
+  
+  ## LINKED LIST
+  [LINKED LIST-0](https://www.youtube.com/watch?v=ge8iG7JecR4&t=318s)
+  1. Like array, linked list is a linear data structure.
+  2. Unlike arrays, linked list elements are not stored at contiguous location; the elements are linked using pointers.
+  3. A linked list is represented by a pointer to the first node of the linked list.The first node is called head.
+  4. If linked list is   empty then value of head is **NULL**.
+  ### Represenation in C
+  ```
+  // A simple C program to introduce a linked list
+  #include<stdio.h>
+  #include<stdlib.h>
+  struct node
+  {
+   int data;
+   struct node *next;
+   };
+  ```
+  ```
+  struct node* head=NULL;
+  struct node* second=NULL;
+  struct node* third=NULL;
+  //allocate 3 nodes in the heap
+  head=(struct node*)malloc(sizeof(stuct node);
+  second=(struct node*)malloc(sizeof(stuct node);
+  third=(struct node*)malloc(sizeof(stuct node);
+  
+  /* Note that only head is sufficient to represent the whole list.We can traverse the complete list by following next pointers */
+  ```
+  ```
+  //This function prints the contents of linked list starting from the given node
+  void printList(struct  node *n)
+  {
+   while(n!=  NULL)
+    {
+     printf("%d",n->data);
+     n=n->next;
+    }
+  }
+  ```
