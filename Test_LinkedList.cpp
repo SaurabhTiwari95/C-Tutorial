@@ -37,6 +37,27 @@ void create()
 		}
 	}
 }
+void push( struct node** head,int new_no)
+{
+//	int new_no;
+	struct node* new_node=(struct node*) malloc(sizeof(struct node));
+	new_node->data=new_no;
+	new_node->next=(*head);
+	(*head)=new_node;
+	 
+}
+void insertAfter(struct node* previous,int new_no)
+{
+	if(previous==NULL)
+	{
+		printf("The given previous node can not be NULL");
+		return;
+	}
+	struct node* new_node=(struct node*)malloc(sizeof(struct node));
+	new_node->data=new_no;
+	new_node->next=previous->next;
+	previous->next=new_node;
+}
 void printList(struct node *n)
 {
 	while(n!=NULL)
@@ -57,13 +78,15 @@ int main()
 	{
 		case 1: create();
 		printList(head);
-		break;
-		case 2: printf("Code for insertion at the beginning!!");	//insert_begn()
-		break;
-		case 3: printf("Code for insertion at a given node!!");	//insert_begn()
+		printf("\n");
+		case 2: push(&head,7);//printf("Code for insertion at the beginning!!"); //push()
+		printList(head);
+		printf("\n");
+		case 3:	insertAfter(head->next,4);//printf("Code for insertion at a given node!!");	//insertAfter()
+		printList(head);
+		printf("\n");
 		break;
 		case 4: printf("Code for insertion at the end!!");	//insert_begn()
-		break;
 		default: printf("Wrong Choice press 0");
 	}
 	return 0;
