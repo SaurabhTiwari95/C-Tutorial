@@ -197,3 +197,30 @@ struct student
     }
   }
   ```
+## Time Complexity for push() is O(1) as it does constant amount of work
+``
+void push( struct node** head,int new_no)
+{
+/*program is used for insertion at the beginning of Linked List*/
+//	int new_no;
+	struct node* new_node=(struct node*) malloc(sizeof(struct node));//allocate memory
+	new_node->data=new_no;//assign the data part
+	new_node->next=(*head);//make next of ne_node as head
+	(*head)=new_node;//move the head to point to the new_node	 
+}
+``
+## Time Complexity for insertAfter() is O(1) as it does constant amount of work
+``
+void insertAfter(struct node* previous,int new_no)
+{
+	if(previous==NULL)//Check if the previous node is null
+	{
+		printf("The given previous node can not be NULL");
+		return;
+	}
+	struct node* new_node=(struct node*)malloc(sizeof(struct node));//allocate the new_node
+	new_node->data=new_no;//put in the data
+	new_node->next=previous->next;//make next of new_node as next of prev_node
+	previous->next=new_node;//move next of the prev_node as new_node
+}
+``
