@@ -197,8 +197,8 @@ struct student
     }
   }
   ```
-## Time Complexity for push() is O(1) as it does constant amount of work
-``
+### Time Complexity for push() is O(1) as it does constant amount of work
+```
 void push( struct node** head,int new_no)
 {
 /*program is used for insertion at the beginning of Linked List*/
@@ -208,9 +208,9 @@ void push( struct node** head,int new_no)
 	new_node->next=(*head);//make next of ne_node as head
 	(*head)=new_node;//move the head to point to the new_node	 
 }
-``
-## Time Complexity for insertAfter() is O(1) as it does constant amount of work
-``
+```
+### Time Complexity for insertAfter() is O(1) as it does constant amount of work
+```
 void insertAfter(struct node* previous,int new_no)
 {
 	if(previous==NULL)//Check if the previous node is null
@@ -223,4 +223,4 @@ void insertAfter(struct node* previous,int new_no)
 	new_node->next=previous->next;//make next of new_node as next of prev_node
 	previous->next=new_node;//move next of the prev_node as new_node
 }
-``
+```
