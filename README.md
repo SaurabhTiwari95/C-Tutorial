@@ -224,3 +224,22 @@ void insertAfter(struct node* previous,int new_no)
 	previous->next=new_node;//move next of the prev_node as new_node
 }
 ```
+
+
+## STACK
+Stack is a linear data structure which follows a particular order in which the operations are performed.
+The order amy be LIFO or FILO.
+### Opeartions performed in STACK
+1.	PUSH (Adds an item in the stack.If the stack is full then it is said as OVERFLOW condition)
+2.	POP (Removes an item from the stack.If the stack is empty then it is said as UNDERFLOW condition)
+3.	Peek or Top
+4.	isEmpty
+## Time Complexities of operations of Stack:
+push(),pop(),isEmpty() and peek() all take O(1)time.We do not run any loop in any of these operations.
+## Aplications of Stack:
+...
+...
+...
+## Implementation:
+1.	Using array
+2.	Using Linked List
