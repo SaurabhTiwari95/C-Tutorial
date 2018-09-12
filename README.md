@@ -228,18 +228,83 @@ void insertAfter(struct node* previous,int new_no)
 
 ## STACK
 Stack is a linear data structure which follows a particular order in which the operations are performed.
-The order amy be LIFO or FILO.
-### Opeartions performed in STACK
-1.	PUSH (Adds an item in the stack.If the stack is full then it is said as OVERFLOW condition)
-2.	POP (Removes an item from the stack.If the stack is empty then it is said as UNDERFLOW condition)
-3.	Peek or Top
-4.	isEmpty
-## Time Complexities of operations of Stack:
+The order may be LIFO(Last In First Out) or FILO(First In Last Out).
+#### Opeartions performed in STACK
+1. PUSH (Adds an item in the stack.If the stack is full then it is said as OVERFLOW condition)
+2. POP (Removes an item from the stack.If the stack is empty then it is said as UNDERFLOW condition)
+3. Peek or Top
+4. isEmpty
+#### Time Complexities of operations of Stack:
 push(),pop(),isEmpty() and peek() all take O(1)time.We do not run any loop in any of these operations.
-## Aplications of Stack:
+#### Aplications of Stack:
 ...
 ...
 ...
-## Implementation:
-1.	Using array
-2.	Using Linked List
+#### Implementation:
+1. Using array
+2. Using Linked List
+```
+// C program for implementation of stack using arrays
+#include <stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<limits.h>
+// A structure to represent a stack
+struct stack
+{
+    int top;
+    unsigned capacity;
+    int* array;
+};
+//Function to create the stack of the given capacity.It initializes the size of stack
+//stack as 0
+struct stack* createStack(unsigned capacity)
+{
+    struct stack* stack=(struct stack*)malloc(sizeof(struct stack));
+    stack->capacity=capacity;
+    stack->top=-1;
+    stack->array=(int*)malloc(stack->capacity*sizeof(int));
+    return stack;
+}
+//stack is full when top is equal to the last index
+int isFull(struct stack* stack)
+{
+    return stack->top==stack->capacity-1;
+}
+//stack is empty when top is equal to -1
+int isEmpty(struct stack* stack)
+{
+    return stack->top==-1;
+}
+void push(struct stack* stack,int item)
+{
+    if(isFull(stack))
+    return;
+    stack->[++stack->top]=item;
+    printf(¨%d pushed to the stack\n¨,item);
+}
+//Function to remove an item from stack.It decreases top by -1
+int pop(struct stack* stack)
+{
+    if(isEmpty(stack))
+    return INT_MIN;
+    return stack->array[stack->top--];
+}
+int peek(struct stack* stack)
+{
+    if(isEmpty(stack))
+    return INT_MIN;
+    return stack->array[stack->top];
+}
+int main() {
+	struct stack* stack=createStack(100)
+	push(stack,10);
+	push(stack,20);
+	push(stack,30);
+	push(stack,40);
+	printf(¨popped from the stack\n¨,pop(stack));
+	printf(¨Top item of the stack is %d\n¨,peek(stack));
+	
+	return 0;
+}
+```
